@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -24,15 +25,23 @@ const ContactForm: React.FC = () => {
 
     try {
       // Replace these values with your own Email.js credentials
-      const serviceId = "your_emailjs_service_id";
-      const templateId = "your_emailjs_template_id";
-      const userId = "your_emailjs_user_id";
+      const serviceId = "service_sgnwek8";
+      const templateId = "template_rvlhtd8";
+      const userId = "user_nVLBRPb3OpwcAuLGrJEok";
 
       await emailjs.send(serviceId, templateId, formData, userId);
-      alert("Message sent successfully!");
+      Swal.fire({
+        title: "Thank You!",
+        text: "Your email has sent!",
+        icon: "success",
+      });
     } catch (error) {
       console.error("Error sending email:", error);
-      alert("Error sending message. Please try again later.");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+      });
     }
   };
 
