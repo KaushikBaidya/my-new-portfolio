@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 
-
+.hover\:border-b-red-500:hover {
+    border-bottom-color: #f56565; /* Red color */
+  }
   

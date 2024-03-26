@@ -88,6 +88,18 @@ export default function Navbar() {
 								Experience
 							</ScrollLink>
 						</li>
+						<li className='px-4 border-transparent border-b-2 hover:border-blue-600 py-2 font-normal cursor-pointer'>
+							<ScrollLink
+								to='projects'
+								spy={true}
+								smooth={true}
+								offset={-70}
+								duration={500}
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								Projects
+							</ScrollLink>
+						</li>
 
 						<li className='px-4 border-transparent border-b-2 hover:border-blue-600 py-2 font-normal cursor-pointer'>
 							<ScrollLink
