@@ -12,7 +12,7 @@ import Image from 'next/image';
 
 const Skills = () => {
 	return (
-		<div className='w-full py-20'>
+		<section className='w-full py-20'>
 			<div className='max-w-[1000px] mx-auto p-5 flex flex-col justify-center w-full h-full'>
 				<div className='text-center'>
 					<p className='text-4xl font-semibold text-center py-2'>
@@ -59,7 +59,7 @@ const Skills = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -52,7 +52,7 @@ export default function Navbar() {
 					}
 				>
 					<ul className='flex flex-col lg:flex-row list-none lg:ml-auto text-base'>
-						<li className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'>
+						<li className='px-4 border-transparent border-b-2 hover:border-blue-600 py-2 font-normal cursor-pointer'>
 							<ScrollLink
 								to='home'
 								spy={true}
@@ -64,7 +64,7 @@ export default function Navbar() {
 								Home
 							</ScrollLink>
 						</li>
-						<li className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'>
+						<li className='px-4 border-transparent border-b-2 hover:border-blue-600 py-2 font-normal cursor-pointer'>
 							<ScrollLink
 								to='about'
 								spy={true}
@@ -76,7 +76,7 @@ export default function Navbar() {
 								About
 							</ScrollLink>
 						</li>
-						<li className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'>
+						<li className='px-4 border-transparent border-b-2 hover:border-blue-600 py-2 font-normal cursor-pointer'>
 							<ScrollLink
 								to='exp'
 								spy={true}
@@ -89,7 +89,7 @@ export default function Navbar() {
 							</ScrollLink>
 						</li>
 
-						<li className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'>
+						<li className='px-4 border-transparent border-b-2 hover:border-blue-600 py-2 font-normal cursor-pointer'>
 							<ScrollLink
 								to='contact'
 								spy={true}
