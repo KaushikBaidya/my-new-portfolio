@@ -5,7 +5,7 @@ const Hero = () => {
 			className="lg:bg-[url('../assets/bakgrnd.png')] w-full lg:h-[50rem] bg-center bg-no-repeat"
 		>
 			<div className='h-full w-full pt-20 flex items-center justify-center'>
-				<div className='lg:w-10/12 2xl:max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 content-center'>
+				<div className='lg:w-10/12 2xl:max-w-6xl mx-auto sm:px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 content-center'>
 					<div className='flex items-center'>
 						<div className='text-center md:text-left mb-5 text-3xl'>
 							<p className='font-bold my-2'>Hi, my name is</p>
