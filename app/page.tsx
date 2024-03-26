@@ -6,6 +6,7 @@ import Experience from './components/experience';
 import Hero from './components/hero';
 import Skills from './components/skills';
 import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
+import Projects from './components/projects';
 
 const Home = () => {
 	const [showBackToTop, setShowBackToTop] = useState(false);
@@ -14,7 +15,6 @@ const Home = () => {
 		const handleScroll = () => {
 			const scrollY = window.scrollY || window.pageYOffset;
 
-			// Adjust the threshold as needed
 			const halfwayPoint = window.innerHeight / 2;
 
 			setShowBackToTop(scrollY > halfwayPoint);
@@ -39,6 +39,7 @@ const Home = () => {
 			<Hero />
 			<AboutMyself />
 			<Experience />
+			<Projects />
 			<Skills />
 			<Contact />
 

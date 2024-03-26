@@ -8,17 +8,18 @@ import Link from 'next/link';
 const AboutMyself = () => {
 	return (
 		<main id='about'>
-			<div className='lg:w-10/12 2xl:max-w-screen-xl mx-auto px-5 py-20'>
-				<section className='border-2 border-blue-300 rounded-lg w-full grid grid-cols-1 lg:grid-cols-2 gap-x-5 p-5 bg-gray-900'>
+			<div className='lg:w-10/12 2xl:max-w-6xl mx-auto sm:px-4 lg:px-0 py-20'>
+				<section className='border border-blue-200 rounded-lg w-full grid grid-cols-1 lg:grid-cols-2 gap-x-5 p-5 bg-gray-900'>
 					<div className=''>
 						<Image
 							src={CartoonNerd}
-							layout='auto'
-							alt=''
+							width={500}
+							height={100}
+							alt='portfoilo'
 							className='rounded-lg'
 						/>
 					</div>
-					<div className=''>
+					<div className='flex flex-col justify-center gap-2'>
 						<p className='text-blue-500 font-medium text-lg'>Who am I</p>
 						<h2 className='text-5xl font-semibold my-4'>Kaushik Baidya</h2>
 						<h2 className='text-3xl font-semibold'>

@@ -10,7 +10,7 @@ const Experience = () => {
 	};
 	return (
 		<main id='exp' className='bg-gray-800 py-20'>
-			<div className='lg:w-10/12 2xl:max-w-screen-xl mx-auto px-4'>
+			<div className='lg:w-10/12 2xl:max-w-6xl mx-auto sm:px-4 lg:px-0'>
 				<div>
 					<h1 className='text-3xl font-semibold'>
 						Experience <span className='text-blue-500 text-5xl'>.</span>{' '}
@@ -30,23 +30,10 @@ const Experience = () => {
 							>
 								Chimbuk IT Ltd.
 							</li>
-							{/* <li
-                className={`cursor-pointer p-5 ${
-                  activeTab === 2
-                    ? "border-l-8 border-blue-500 text-white"
-                    : "bg-gray-950 border-l-8 border-gray-950"
-                }`}
-                onClick={() => handleTabClick(2)}
-              >
-                Tab 2
-              </li> */}
 						</ul>
 					</div>
 
-					<div className='p-4 md:w-3/4'>
-						{activeTab === 1 && <ChimbukIT />}
-						{/* {activeTab === 2 && <div>Content for Tab 2</div>} */}
-					</div>
+					<div className='p-4 md:w-3/4'>{activeTab === 1 && <ChimbukIT />}</div>
 				</div>
 			</div>
 		</main>
