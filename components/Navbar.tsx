@@ -26,15 +26,14 @@ export default function Navbar() {
 			className={
 				'fixed w-full text-sm text-white ' +
 				(bgColor
-					? 'bg-gray-800 backdrop-blur-sm shadow-sm transition duration-200 ease-in'
-					: 'bg-[#1e2a44] backdrop-blur-sm lg:bg-transparent ')
+					? 'bg-[#111827] backdrop-blur-sm shadow-sm transition duration-200 ease-in'
+					: 'bg-[#111827] backdrop-blur-sm')
 			}
 		>
 			<div className='lg:w-10/12 2xl:max-w-6xl mx-auto flex flex-wrap items-center justify-between z-50 py-2'>
 				<div className='w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
 					<Link href='/'>
 						<div className='w-20 cursor-pointer text-blue-500'>
-							{/* <FaCode size={40} /> */}
 							<Image src={PortfolioLogo} alt='logo' width={50} height={50} />
 						</div>
 					</Link>
@@ -90,12 +89,6 @@ export default function Navbar() {
 							</ScrollLink>
 						</li>
 
-						{/* <li className="px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal">
-              <Link href="/blogs">
-                <span onClick={() => setNavbarOpen(!navbarOpen)}>Blogs</span>
-              </Link>
-            </li> */}
-
 						<li className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'>
 							<ScrollLink
 								to='contact'
@@ -109,12 +102,14 @@ export default function Navbar() {
 							</ScrollLink>
 						</li>
 
-						<li className='px-4 py-2 bg-blue-400 font-normal mx-2 rounded-full hover:bg-blue-600 cursor-pointer text-white text-center'>
+						<li className='flex items-center px-4 py-1 border border-blue-600 bg-blue-600 mx-2 rounded-full hover:bg-transparent cursor-pointer text-white'>
 							<a
 								href='https://drive.google.com/file/d/1adSIMWxKUhQ3ZAfkulBNtptiw56ECJ2l/view?usp=sharing'
 								target='_blank'
 							>
-								<span onClick={() => setNavbarOpen(!navbarOpen)}>Resume</span>
+								<span onClick={() => setNavbarOpen(!navbarOpen)}>
+									Download resume
+								</span>
 							</a>
 						</li>
 					</ul>
