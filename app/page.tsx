@@ -14,7 +14,6 @@ const Home = () => {
 		const handleScroll = () => {
 			const scrollY = window.scrollY || window.pageYOffset;
 
-			// Adjust the threshold as needed
 			const halfwayPoint = window.innerHeight / 2;
 
 			setShowBackToTop(scrollY > halfwayPoint);

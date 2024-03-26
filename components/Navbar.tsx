@@ -30,10 +30,10 @@ export default function Navbar() {
 					: 'bg-[#1e2a44] backdrop-blur-sm lg:bg-transparent ')
 			}
 		>
-			<div className='lg:w-10/12 2xl:max-w-screen-xl mx-auto flex flex-wrap items-center justify-between z-50 py-2'>
+			<div className='lg:w-10/12 2xl:max-w-6xl mx-auto flex flex-wrap items-center justify-between z-50 py-2'>
 				<div className='w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
 					<Link href='/'>
-						<div className='w-20 mx-5 cursor-pointer text-blue-500'>
+						<div className='w-20 cursor-pointer text-blue-500'>
 							{/* <FaCode size={40} /> */}
 							<Image src={PortfolioLogo} alt='logo' width={50} height={50} />
 						</div>
