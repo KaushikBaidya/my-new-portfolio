@@ -52,7 +52,7 @@ export default function Navbar() {
 						(navbarOpen ? 'flex' : ' hidden')
 					}
 				>
-					<ul className='flex flex-col lg:flex-row list-none lg:ml-auto uppercase'>
+					<ul className='flex flex-col lg:flex-row list-none lg:ml-auto text-base'>
 						<li className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'>
 							<ScrollLink
 								to='home'
