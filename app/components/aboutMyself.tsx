@@ -53,7 +53,7 @@ const AboutMyself = () => {
 									<FaGithubSquare size={40} />
 								</div>
 							</Link>
-							<Link href={`tel:01624767207`}>
+							<Link href={`tel:+8801624767207`}>
 								<div className='h-16 w-16 bg-gray-950 flex items-center justify-center border-2 border-gray-700 hover:border-blue-400 rounded-lg'>
 									<PiWhatsappLogoThin size={40} />
 								</div>
