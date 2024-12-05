@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Oxygen } from "next/font/google";
+import { Oxygen, Monda } from "next/font/google";
 import "./globals.css";
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 // const inter = Inter({ subsets: ["latin"] });
+
+const monda = Monda({
+	subsets: ["latin"],
+	variable: "--font-monda",
+	weight: ["700"],
+});
+
 const oxygen = Oxygen({
 	subsets: ["latin"],
 	variable: "--font-oxygen",
@@ -24,7 +31,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`${oxygen.variable} bg-gray-900 text-white`}>
+			<body
+				className={`${oxygen.variable} ${monda.variable} bg-gray-900 text-white`}
+			>
 				<Navbar />
 				<main className="">{children}</main>
 				<Footer />
