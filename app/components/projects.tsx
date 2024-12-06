@@ -7,8 +7,9 @@ const Projects = (props: Props) => {
 	return (
 		<section id="projects">
 			<div className="lg:w-10/12 2xl:max-w-6xl mx-auto sm:px-4 lg:px-0 py-20">
-				<div className="my-5">
-					<h1 className="text-4xl font-semibold hero-font uppercase">
+				<div className="my-5 space-y-4">
+					<p className="capitalize text-lg text-primary">my work</p>
+					<h1 className="text-5xl font-semibold hero-font uppercase">
 						Projects <span className="text-primary text-5xl">.</span>{" "}
 					</h1>
 					<div className="max-w-3xl">
@@ -69,7 +70,11 @@ const Projects = (props: Props) => {
 						</a>
 					</div>
 				</div>
-				<a href="">
+				<a
+					href="https://github.com/KaushikBaidya"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<div className="w-fit mx-auto flex items-center justify-center gap-4 mt-16 border border-transparent hover:border-b-sky-500 transition duration-300 ease-in-out py-2 text-xl font-semibold text-sky-500">
 						<p>Repositories on github </p>
 						<span>

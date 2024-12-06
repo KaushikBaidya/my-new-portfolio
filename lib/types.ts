@@ -1,10 +1,9 @@
-import { links } from "./data";
-
-export type SectionName = (typeof links)[number]["name"];
-
 export type VerticalElementType = {
 	title: string;
+	company: string;
 	description: string;
 	date: string;
 	icon: React.FunctionComponentElement<any>;
 };
+
+export type skillsDataType = { name: string; imageUrl: string | any };

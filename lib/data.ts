@@ -6,54 +6,50 @@ import { AiFillYoutube } from "react-icons/ai";
 // import ClickGeneration from "^/public/ClickGeneration.jpg";
 // import LaPecoraNera from "^/public/LaPecoraNera.jpg";
 
-export const links = [
-	{
-		name: "Home",
-		hash: "#home",
-	},
-	{
-		name: "About",
-		hash: "#about",
-	},
-	{
-		name: "Projects",
-		hash: "#projects",
-	},
-	{
-		name: "Skills",
-		hash: "#skills",
-	},
-	{
-		name: "Experience",
-		hash: "#experience",
-	},
-	{
-		name: "Contact",
-		hash: "#contact",
-	},
+import HTML from "@/assets/html.png";
+import CSS from "@/assets/css.png";
+import JavaScript from "@/assets/javascript.png";
+import ReactImage from "@/assets/react.png";
+import FireBase from "@/assets/firebase.png";
+import GitHub from "@/assets/github.png";
+import Tailwind from "@/assets/tailwind.png";
+import Mongo from "@/assets/mongo.png";
+import Node from "@/assets/node.png";
+import Typescript from "@/assets/typescript.png";
+import Framer from "@/assets/framer.webp";
+
+export const navItems = [
+	"Home",
+	"About",
+	"Experience",
+	"Projects",
+	"Contact",
 ] as const;
 
 export const experiencesData = [
 	{
-		title: "First Time Programming",
+		title: "Graduatoin in CSE",
+		company: "Ranada Prasad Shaha University",
 		description:
-			"I was playing a video game, and I wanted to create something to automate it, so I started watching YouTube videos to learn about ActionScript 3.0 and made a bot that played for me.",
-		icon: React.createElement(AiFillYoutube),
-		date: "2015",
-	},
-	{
-		title: "SaaS Business Owner",
-		description:
-			"After using my bots for a while, I decided to start selling them. Over the years, I managed to resell both monthly and yearly licenses for my bots, gaining experience in connecting clients and servers for licensing my system.",
-		icon: React.createElement(GiReceiveMoney),
-		date: "2016 - 2019",
-	},
-	{
-		title: "Full-Stack Developer",
-		description:
-			"I'm now a full-stack developer working as a freelancer. My favorite stack is React, Next.JS, TypeScript, Tailwind CSS. I'm open to single projects development.",
+			"I have worked here as a frontend developer intern and learned many different technologies.I maintained api responses and try to reduce api latency.",
 		icon: React.createElement(BiCodeAlt),
-		date: "2020 - Present",
+		date: "Jan 2016 - Jan 2021",
+	},
+	{
+		title: "Frontend Developer (Intern)",
+		company: "Chimbuk IT Ltd.",
+		description:
+			"I have worked here as a frontend developer intern and learned many different technologies.I maintained api responses and try to reduce api latency.",
+		icon: React.createElement(AiFillYoutube),
+		date: "Jul 2021 - Sep 2021",
+	},
+	{
+		title: "Frontend - Full Stack Developer",
+		company: "Chimbuk IT Ltd.",
+		description:
+			"I worked as a full stack developer at Chimbuk IT Ltd. I have worked on HR and Payroll management, ERP software system for school and college, Learning management software.",
+		icon: React.createElement(GiReceiveMoney),
+		date: "Oct 2021 - July 2024",
 	},
 ] as const;
 
@@ -85,17 +81,15 @@ export const experiencesData = [
 // ] as const;
 
 export const skillsData = [
-	"HTML",
-	"CSS",
-	"JavaScript",
-	"TypeScript",
-	"React",
-	"Next.JS",
-	"Git",
-	"Tailwind CSS",
-	"Framer Motion",
-	"Elementor",
-	"WordPress",
-	"Hosting",
-	"Deployment",
+	{ name: "HTML", imageUrl: HTML },
+	{ name: "CSS", imageUrl: CSS },
+	{ name: "JavaScript", imageUrl: JavaScript },
+	{ name: "React", imageUrl: ReactImage },
+	{ name: "Firebase", imageUrl: FireBase },
+	{ name: "GitHub", imageUrl: GitHub },
+	{ name: "Tailwind", imageUrl: Tailwind },
+	{ name: "MongoDB", imageUrl: Mongo },
+	{ name: "Node", imageUrl: Node },
+	{ name: "TypeScript", imageUrl: Typescript },
+	{ name: "Framer Motion", imageUrl: Framer },
 ] as const;

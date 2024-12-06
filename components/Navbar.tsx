@@ -6,8 +6,7 @@ import Image from "next/image";
 import PortfolioLogo from "@/assets/logo.png";
 import { Link as ScrollLink } from "react-scroll";
 import { RiMenu5Line } from "react-icons/ri";
-
-const navItems = ["Home", "About", "Experience", "Projects", "Contact"];
+import { navItems } from "@/lib/data";
 
 const Navbar: React.FC = () => {
 	const navContainerRef = useRef<HTMLDivElement | null>(null);
