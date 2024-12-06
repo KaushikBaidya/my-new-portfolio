@@ -7,6 +7,7 @@ import Hero from "./components/hero";
 import Skills from "./components/skills";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import Projects from "./components/projects";
+import MyExperience from "./components/myExperience";
 
 const Home = () => {
 	const [showBackToTop, setShowBackToTop] = useState(false);
@@ -38,7 +39,8 @@ const Home = () => {
 		<main className="overflow-x-hidden bg-[#050816]">
 			<Hero />
 			<AboutMyself />
-			<Experience />
+			{/* <Experience /> */}
+			<MyExperience />
 			<Projects />
 			<Skills />
 			<Contact />

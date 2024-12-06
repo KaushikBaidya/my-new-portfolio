@@ -8,9 +8,18 @@ const Projects = (props: Props) => {
 		<section id="projects">
 			<div className="lg:w-10/12 2xl:max-w-6xl mx-auto sm:px-4 lg:px-0 py-20">
 				<div className="my-5">
-					<h1 className="text-3xl font-semibold">
-						Projects <span className="text-blue-500 text-5xl">.</span>{" "}
+					<h1 className="text-4xl font-semibold hero-font uppercase">
+						Projects <span className="text-primary text-5xl">.</span>{" "}
 					</h1>
+					<div className="max-w-3xl">
+						<p className="text-lg leading-relaxed py-4">
+							Following projects showcases my skills and experience through
+							real-world examples of my work. Each project is briefly described
+							with links to code repositories and live demos in it. It reflects
+							my ability to solve complex problems, work with different
+							technologies, and manage projects effectively.
+						</p>
+					</div>
 				</div>
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
 					<div className="border border-orange-500 rounded p-6 grid gap-6">

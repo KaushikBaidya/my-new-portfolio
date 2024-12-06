@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -34,9 +35,12 @@ export default function RootLayout({
 			<body
 				className={`${oxygen.variable} ${monda.variable} bg-gray-900 text-white`}
 			>
-				<Navbar />
-				<main className="">{children}</main>
-				<Footer />
+				{" "}
+				<ActiveSectionContextProvider>
+					<Navbar />
+					<main className="">{children}</main>
+					<Footer />
+				</ActiveSectionContextProvider>
 			</body>
 		</html>
 	);

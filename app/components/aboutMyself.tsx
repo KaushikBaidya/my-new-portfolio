@@ -31,10 +31,12 @@ const AboutMyself = () => {
 							Fronent Developer and UI designer
 						</h2>
 						<p className="text-lg mt-5">
-							I am passionate about building excellent software that improves
-							the lives of those around me. I specialize in creating software
-							for clients ranging from individuals and small-businesses all the
-							way to large enterprise corporations.
+							I'm a skilled software developer with experience in TypeScript and
+							JavaScript, and expertise in frameworks like React, Node.js, and
+							Three.js. I'm a quick learner and collaborate closely with clients
+							to create efficient, scalable, and user-friendly solutions that
+							solve real-world problems. Let's work together to bring your ideas
+							to life!
 						</p>
 						<div className="text-primary flex gap-2 my-3">
 							<Tilt>
