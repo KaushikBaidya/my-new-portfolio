@@ -1,132 +1,97 @@
-'use client';
-import React, { useEffect, useState } from 'react';
-import { FaBars } from 'react-icons/fa';
-import Link from 'next/link';
-import Image from 'next/image';
-import PortfolioLogo from '@/assets/logo.png';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { useWindowScroll } from "react-use";
+import Image from "next/image";
+import PortfolioLogo from "@/assets/logo.png";
+import { Link as ScrollLink } from "react-scroll";
+import { RiMenu5Line } from "react-icons/ri";
+import { navItems } from "@/lib/data";
 
-export default function Navbar() {
-	const [navbarOpen, setNavbarOpen] = useState(false);
-	const [bgColor, setBgColor] = useState(false);
+const Navbar: React.FC = () => {
+	const navContainerRef = useRef<HTMLDivElement | null>(null);
+	const { y: currentScrollY } = useWindowScroll();
+	const [isNavVisible, setIsNavVisible] = useState<boolean>(true);
+	const [lastScrollY, setLastScrollY] = useState<number>(0);
+	const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
 
 	useEffect(() => {
-		const changeColor = () => {
-			if (window.scrollY >= 70) {
-				setBgColor(true);
-			} else {
-				setBgColor(false);
+		if (navContainerRef.current) {
+			if (currentScrollY === 0) {
+				setIsNavVisible(true);
+				navContainerRef.current.classList.remove("floating-nav");
+			} else if (currentScrollY > lastScrollY) {
+				setIsNavVisible(false);
+				navContainerRef.current.classList.add("floating-nav");
+			} else if (currentScrollY < lastScrollY) {
+				setIsNavVisible(true);
+				navContainerRef.current.classList.add("floating-nav");
 			}
-		};
-		window.addEventListener('scroll', changeColor);
-	}, []);
+		}
+		setLastScrollY(currentScrollY);
+	}, [currentScrollY, lastScrollY]);
+
+	useEffect(() => {
+		if (navContainerRef.current) {
+			gsap.to(navContainerRef.current, {
+				y: isNavVisible ? 0 : -100,
+				opacity: isNavVisible ? 1 : 0,
+				duration: 0.2,
+			});
+		}
+	}, [isNavVisible]);
 
 	return (
-		<nav
-			className={
-				'fixed w-full text-sm text-white ' +
-				(bgColor
-					? 'bg-[#111827] backdrop-blur-sm shadow-sm transition duration-200 ease-in'
-					: 'bg-[#111827] backdrop-blur-sm')
-			}
+		<div
+			ref={navContainerRef}
+			className="fixed inset-x-0 top-4 z-50 h-20 border-none transition-all duration-75 sm:inset-x-6"
 		>
-			<div className='lg:w-10/12 2xl:max-w-6xl mx-auto flex flex-wrap items-center justify-between z-50 py-2'>
-				<div className='w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
-					<Link href='/'>
-						<div className='w-20 cursor-pointer text-blue-500'>
-							<Image src={PortfolioLogo} alt='logo' width={50} height={50} />
+			<header className="absolute top-1/2 w-full -translate-y-1/2">
+				<nav className="flex size-full items-center justify-between p-4">
+					<div className="w-full flex items-center justify-between gap-7">
+						<Image
+							src={PortfolioLogo}
+							alt="logo"
+							className="w-14"
+							width={100}
+							height={100}
+						/>
+						<div>
+							<button
+								className="text-violet-500 cursor-pointer text-xl px-3 py-1 block lg:hidden"
+								type="button"
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								<RiMenu5Line size={25} className="" />
+							</button>
 						</div>
-					</Link>
-					<button
-						className='text-blue-500 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none'
-						type='button'
-						onClick={() => setNavbarOpen(!navbarOpen)}
-					>
-						<FaBars size={25} className='mr-3' />
-					</button>
-				</div>
-				<div
-					className={
-						'lg:flex flex-grow items-center py-3 ' +
-						(navbarOpen ? 'flex' : ' hidden')
-					}
-				>
-					<ul className='flex flex-col lg:flex-row list-none lg:ml-auto text-base'>
-						<li className='px-4 border-transparent border-b-2 hover:border-blue-600 py-2 font-normal cursor-pointer'>
-							<ScrollLink
-								to='home'
-								spy={true}
-								smooth={true}
-								offset={-70}
-								duration={500}
-								onClick={() => setNavbarOpen(!navbarOpen)}
-							>
-								Home
-							</ScrollLink>
-						</li>
-						<li className='px-4 border-transparent border-b-2 hover:border-blue-600 py-2 font-normal cursor-pointer'>
-							<ScrollLink
-								to='about'
-								spy={true}
-								smooth={true}
-								offset={-70}
-								duration={500}
-								onClick={() => setNavbarOpen(!navbarOpen)}
-							>
-								About
-							</ScrollLink>
-						</li>
-						<li className='px-4 border-transparent border-b-2 hover:border-blue-600 py-2 font-normal cursor-pointer'>
-							<ScrollLink
-								to='exp'
-								spy={true}
-								smooth={true}
-								offset={-70}
-								duration={500}
-								onClick={() => setNavbarOpen(!navbarOpen)}
-							>
-								Experience
-							</ScrollLink>
-						</li>
-						<li className='px-4 border-transparent border-b-2 hover:border-blue-600 py-2 font-normal cursor-pointer'>
-							<ScrollLink
-								to='projects'
-								spy={true}
-								smooth={true}
-								offset={-70}
-								duration={500}
-								onClick={() => setNavbarOpen(!navbarOpen)}
-							>
-								Projects
-							</ScrollLink>
-						</li>
-
-						<li className='px-4 border-transparent border-b-2 hover:border-blue-600 py-2 font-normal cursor-pointer'>
-							<ScrollLink
-								to='contact'
-								spy={true}
-								smooth={true}
-								offset={-70}
-								duration={500}
-								onClick={() => setNavbarOpen(!navbarOpen)}
-							>
-								Contact
-							</ScrollLink>
-						</li>
-
-						<li className='flex items-center px-4 py-1 border border-blue-600 bg-blue-600 mx-2 rounded-full hover:bg-transparent cursor-pointer text-white'>
-							<a
-								href='https://drive.google.com/file/d/1adSIMWxKUhQ3ZAfkulBNtptiw56ECJ2l/view?usp=sharing'
-								target='_blank'
-							>
-								<span onClick={() => setNavbarOpen(!navbarOpen)}>
-									Download resume
-								</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+					</div>
+					<div className="flex items-center h-full">
+						<div
+							className={`lg:flex flex-grow ${
+								navbarOpen ? "block bg-slate-900" : "hidden"
+							} absolute lg:static lg:w-auto w-full left-0 top-full lg:top-auto `}
+						>
+							{navItems.map((item) => (
+								<ScrollLink
+									key={item}
+									to={`${item.toLocaleLowerCase()}`}
+									spy={true}
+									smooth={true}
+									offset={-70}
+									duration={500}
+									onClick={() => setNavbarOpen(false)}
+									className="block lg:inline-block px-4 py-2 text-blue-50 cursor-pointer nav-hover-btn"
+								>
+									{item}
+								</ScrollLink>
+							))}
+						</div>
+					</div>
+				</nav>
+			</header>
+		</div>
 	);
-}
+};
+
+export default Navbar;
