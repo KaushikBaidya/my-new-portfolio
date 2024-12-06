@@ -46,7 +46,7 @@ const ContactForm: React.FC = () => {
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className="max-w-screen-lg mx-auto px-10">
+		<form onSubmit={handleSubmit} className="px-10">
 			<div className="mb-4">
 				<input
 					type="text"

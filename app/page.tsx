@@ -7,6 +7,7 @@ import Experience from "./homeComponents/experience";
 import Skills from "./homeComponents/skills";
 import Projects from "./homeComponents/projects";
 import Contact from "./homeComponents/contact";
+import StarsCanvas from "./homeComponents/Stars";
 
 const Home = () => {
 	const [showBackToTop, setShowBackToTop] = useState(false);
@@ -40,8 +41,12 @@ const Home = () => {
 			<AboutMyself />
 			<Experience />
 			<Skills />
-			<Projects />
-			<Contact />
+			<div className="relative z-0">
+				<Projects />
+				<Contact />
+				<StarsCanvas />
+			</div>
+			{/* <Contact /> */}
 			{showBackToTop && (
 				<button
 					onClick={scrollToTop}
