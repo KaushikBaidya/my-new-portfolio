@@ -32,14 +32,12 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body
-				className={`${oxygen.variable} ${monda.variable} bg-gray-900 text-white`}
-			>
+			<body className={`${oxygen.variable} ${monda.variable} text-white`}>
 				{" "}
 				<ActiveSectionContextProvider>
 					<Navbar />
-					<main className="">{children}</main>
-					<Footer />
+					<main>{children}</main>
+					{/* <Footer /> */}
 				</ActiveSectionContextProvider>
 			</body>
 		</html>

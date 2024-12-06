@@ -34,7 +34,7 @@ const Home = () => {
 	};
 
 	return (
-		<main className="overflow-x-hidden bg-[#050816]">
+		<main className="overflow-x-hidden bg-gradient-to-b from-[#050816] to-gray-900">
 			<Hero />
 			<AboutMyself />
 			<MyExperience />

@@ -7,7 +7,7 @@ const SkillElement = ({ name, imageUrl }: skillsDataType) => {
 	return (
 		<div>
 			<Tilt>
-				<div className="shadow-md shadow-[#040c16] duration-500">
+				<div className="">
 					<Image
 						className="w-24 mx-auto"
 						width={100}

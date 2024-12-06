@@ -13,7 +13,7 @@ console.log("experiencesData :", experiencesData);
 export default function Experience() {
 	const { ref } = useSectionInView("Experience");
 	return (
-		<section id="experience" ref={ref}>
+		<section id="experience" ref={ref} className="">
 			<div className="lg:w-10/12 2xl:max-w-6xl mx-auto sm:px-4 lg:px-0 py-20">
 				<div className="pb-16 text-center space-y-4">
 					<p className="capitalize text-lg text-primary">
