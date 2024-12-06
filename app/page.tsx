@@ -1,12 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import AboutMyself from "./components/aboutMyself";
-import Contact from "./components/contact";
-import Hero from "./components/hero";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
-import Projects from "./components/projects";
-import MyExperience from "./components/myExperience";
-import Skills from "./components/skills";
+import Hero from "./homeComponents/hero";
+import AboutMyself from "./homeComponents/aboutMyself";
+import Experience from "./homeComponents/experience";
+import Skills from "./homeComponents/skills";
+import Projects from "./homeComponents/projects";
+import Contact from "./homeComponents/contact";
 
 const Home = () => {
 	const [showBackToTop, setShowBackToTop] = useState(false);
@@ -38,14 +38,14 @@ const Home = () => {
 		<main className="overflow-x-hidden bg-gradient-to-b from-[#050816] to-gray-900">
 			<Hero />
 			<AboutMyself />
-			<MyExperience />
+			<Experience />
 			<Skills />
 			<Projects />
 			<Contact />
 			{showBackToTop && (
 				<button
 					onClick={scrollToTop}
-					className="fixed bottom-4 right-4 bg-blue-500 border-2 border-blue-500 hover:bg-gray-900 hover:border-blue-500 text-white p-2 rounded-full"
+					className="fixed bottom-4 right-4 bg-primary border-2 border-primary hover:bg-gray-900 hover:border-primary text-white p-2 rounded-full"
 				>
 					<MdKeyboardDoubleArrowUp size={25} />
 				</button>
