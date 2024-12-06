@@ -11,7 +11,6 @@ const VerticalElement = ({
 	date,
 	icon,
 }: VerticalElementType) => {
-	// const { theme } = useTheme();
 	const { ref, inView } = useInView({ threshold: 0.25, triggerOnce: true });
 
 	return (
@@ -28,7 +27,7 @@ const VerticalElement = ({
 				borderRight: "0.4rem solid rgba(149, 59, 194, 0.889)",
 			}}
 			date={date}
-			icon={icon}
+			icon={<>{icon}</>}
 			iconStyle={{
 				background: "rgba(149, 59, 194, 0.889)",
 				fontSize: "1.5rem",

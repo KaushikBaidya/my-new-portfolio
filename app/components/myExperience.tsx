@@ -8,8 +8,6 @@ import { useSectionInView } from "@/lib/hooks";
 import { VerticalElement } from "./vertical-element";
 import Skills from "./skills";
 
-console.log("experiencesData :", experiencesData);
-
 export default function Experience() {
 	const { ref } = useSectionInView("Experience");
 	return (
@@ -20,7 +18,7 @@ export default function Experience() {
 						What I have done so far
 					</p>
 					<h1 className="text-5xl font-semibold hero-font uppercase ">
-						Work Experience <span className="text-primary text-5xl">.</span>{" "}
+						Work Experience <span className="text-primary text-5xl">.</span>
 					</h1>
 				</div>
 				<div className="my-10">
