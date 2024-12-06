@@ -6,6 +6,7 @@ import Hero from "./components/hero";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import Projects from "./components/projects";
 import MyExperience from "./components/myExperience";
+import Skills from "./components/skills";
 
 const Home = () => {
 	const [showBackToTop, setShowBackToTop] = useState(false);
@@ -38,9 +39,9 @@ const Home = () => {
 			<Hero />
 			<AboutMyself />
 			<MyExperience />
+			<Skills />
 			<Projects />
 			<Contact />
-
 			{showBackToTop && (
 				<button
 					onClick={scrollToTop}
