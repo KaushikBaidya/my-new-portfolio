@@ -21,7 +21,12 @@ const Hero = () => {
 								applications.
 							</h3>
 							<div className="w-full flex items-center justify-center md:items-start md:justify-start">
-								<Button btnText="Download CV" />
+								<a
+									href="https://drive.google.com/file/d/1adSIMWxKUhQ3ZAfkulBNtptiw56ECJ2l/view?usp=sharing"
+									target="_blank"
+								>
+									<Button btnText="Download CV" />
+								</a>
 							</div>
 						</div>
 					</div>
