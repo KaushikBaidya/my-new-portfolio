@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import { GrDocumentText } from "react-icons/gr";
 
 const Hero = () => {
 	return (
@@ -25,7 +26,8 @@ const Hero = () => {
 									href="https://drive.google.com/file/d/1adSIMWxKUhQ3ZAfkulBNtptiw56ECJ2l/view?usp=sharing"
 									target="_blank"
 								>
-									<Button btnText="Download CV" />
+									{/* <Button btnText="Download CV" /> */}
+									<Button btnText="Download Resume" icon={GrDocumentText} />
 								</a>
 							</div>
 						</div>
