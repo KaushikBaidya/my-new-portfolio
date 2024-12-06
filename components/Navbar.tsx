@@ -6,7 +6,7 @@ import Image from "next/image";
 import PortfolioLogo from "@/assets/logo.png";
 import { Link as ScrollLink } from "react-scroll";
 import { RiMenu5Line } from "react-icons/ri";
-import { navItems } from "@/lib/data";
+import { links } from "@/lib/data";
 
 const Navbar: React.FC = () => {
 	const navContainerRef = useRef<HTMLDivElement | null>(null);
@@ -72,10 +72,10 @@ const Navbar: React.FC = () => {
 								navbarOpen ? "block bg-slate-900" : "hidden"
 							} absolute lg:static lg:w-auto w-full left-0 top-full lg:top-auto `}
 						>
-							{navItems.map((item) => (
+							{links.map((item) => (
 								<ScrollLink
-									key={item}
-									to={`${item.toLocaleLowerCase()}`}
+									key={item.name}
+									to={`${item.name.toLocaleLowerCase()}`}
 									spy={true}
 									smooth={true}
 									offset={-70}
@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
 									onClick={() => setNavbarOpen(false)}
 									className="block lg:inline-block px-4 py-2 text-blue-50 cursor-pointer nav-hover-btn"
 								>
-									{item}
+									{item.name}
 								</ScrollLink>
 							))}
 						</div>
