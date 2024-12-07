@@ -1,5 +1,6 @@
 import Button from "@/components/ui/Button";
 import { GrDocumentText } from "react-icons/gr";
+import ThreeDmodel from "./threeDmodel";
 
 const Hero = () => {
 	return (
@@ -8,7 +9,7 @@ const Hero = () => {
 			className="lg:bg-[url('../assets/bakgrnd.png')] w-screen lg:h-dvh bg-center bg-no-repeat"
 		>
 			<div className="h-full w-full pt-28 md:pt-20 flex items-center justify-center">
-				<div className="lg:w-10/12 2xl:max-w-6xl mx-auto sm:px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 content-center px-4">
+				<div className="lg:w-11/12 2xl:max-w-7xl mx-auto sm:px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 content-center px-4">
 					<div className="flex items-center">
 						<div className="text-center md:text-left mb-5 text-2xl">
 							<p className="font-bold my-2">Hi, my name is</p>
@@ -31,6 +32,9 @@ const Hero = () => {
 								</a>
 							</div>
 						</div>
+					</div>
+					<div className="w-full p-10">
+						<ThreeDmodel />
 					</div>
 				</div>
 			</div>
