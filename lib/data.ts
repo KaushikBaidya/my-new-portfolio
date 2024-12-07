@@ -18,13 +18,13 @@ import Node from "@/assets/node.png";
 import Typescript from "@/assets/typescript.png";
 import Framer from "@/assets/framer.webp";
 
-export const navItems = [
-	"Home",
-	"About",
-	"Experience",
-	"Projects",
-	"Contact",
-] as const;
+// export const navItems = [
+// 	"Home",
+// 	"About",
+// 	"Experience",
+// 	"Projects",
+// 	"Contact",
+// ] as const;
 
 export const links = [
 	{
@@ -36,12 +36,12 @@ export const links = [
 		hash: "#about",
 	},
 	{
-		name: "Projects",
-		hash: "#projects",
-	},
-	{
 		name: "Experience",
 		hash: "#experience",
+	},
+	{
+		name: "Projects",
+		hash: "#projects",
 	},
 	{
 		name: "Contact",
