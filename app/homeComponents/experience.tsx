@@ -6,10 +6,10 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { VerticalElement } from "./vertical-element";
-import Skills from "./skills";
 
 export default function Experience() {
 	const { ref } = useSectionInView("Experience");
+
 	return (
 		<section id="experience" ref={ref} className="">
 			<div className="lg:w-10/12 2xl:max-w-6xl mx-auto sm:px-4 lg:px-0 py-20">
@@ -38,7 +38,6 @@ export default function Experience() {
 						})}
 					</VerticalTimeline>
 				</div>
-				<Skills />
 			</div>
 		</section>
 	);

@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import { GrDocumentText } from "react-icons/gr";
 
 const Hero = () => {
 	return (
@@ -15,9 +16,9 @@ const Hero = () => {
 								Kaushik Baidya
 							</h1>
 							<h3 className="my-10 text-lg md:text-2xl">
-								I’m a Front-End designer and developer specializing in building
+								I am a Front-End designer and developer specializing in building
 								(and occasionally designing) exceptional digital experiences.
-								Currently, I’m focused on building responsive full-stack web
+								Currently, I am focused on building responsive full-stack web
 								applications.
 							</h3>
 							<div className="w-full flex items-center justify-center md:items-start md:justify-start">
@@ -25,7 +26,8 @@ const Hero = () => {
 									href="https://drive.google.com/file/d/1adSIMWxKUhQ3ZAfkulBNtptiw56ECJ2l/view?usp=sharing"
 									target="_blank"
 								>
-									<Button btnText="Download CV" />
+									{/* <Button btnText="Download CV" /> */}
+									<Button btnText="Download Resume" icon={GrDocumentText} />
 								</a>
 							</div>
 						</div>
