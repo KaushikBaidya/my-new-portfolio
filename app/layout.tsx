@@ -1,12 +1,10 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { Oxygen, Monda } from "next/font/google";
 import "./globals.css";
 
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ActiveSectionContextProvider from "@/context/active-section-context";
-
-// const inter = Inter({ subsets: ["latin"] });
+import ClientWrapper from "@/components/ClientWrapper"; // New client-side component
 
 const monda = Monda({
 	subsets: ["latin"],
@@ -33,11 +31,12 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${oxygen.variable} ${monda.variable} text-white`}>
-				{" "}
 				<ActiveSectionContextProvider>
-					<Navbar />
-					<main>{children}</main>
-					{/* <Footer /> */}
+					<ClientWrapper>
+						<Navbar />
+						<main>{children}</main>
+						{/* <Footer /> */}
+					</ClientWrapper>
 				</ActiveSectionContextProvider>
 			</body>
 		</html>
