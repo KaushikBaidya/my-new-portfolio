@@ -9,7 +9,7 @@ import {
 	ContactShadows,
 	OrbitControls,
 } from "@react-three/drei";
-import HeroPage from "../about/HeroPage";
+import HeroPage from "./HeroPage";
 
 interface GLTFResult {
 	nodes: {
