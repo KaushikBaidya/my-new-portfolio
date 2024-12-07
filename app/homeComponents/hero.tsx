@@ -33,7 +33,7 @@ const Hero = () => {
 							</div>
 						</div>
 					</div>
-					<div className="w-full p-10">
+					<div className="hidden lg:block w-full p-10">
 						<ThreeDmodel />
 					</div>
 				</div>
