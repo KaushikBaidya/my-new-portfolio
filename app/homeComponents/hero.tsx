@@ -26,10 +26,10 @@ const Hero = () => {
 									Kaushik Baidya
 								</h1>
 								<h3 className="my-10 text-lg md:text-2xl">
-									I am a Front-End designer and developer specializing in
+									I&apos;m a Front-End designer and developer specializing in
 									building (and occasionally designing) exceptional digital
-									experiences. Currently, I am focused on building responsive
-									full-stack web applications.
+									experiences. Currently, I&apos;m focused on building
+									responsive full-stack web applications.
 								</h3>
 								<div className="w-full flex items-center justify-center md:items-start md:justify-start">
 									<a

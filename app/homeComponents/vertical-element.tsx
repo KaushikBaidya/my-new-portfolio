@@ -37,12 +37,8 @@ const VerticalElement = ({
 			<h3 className="!font-semibold !text-xl capitalize" ref={ref}>
 				{title}
 			</h3>
-			<p className="!mt-2 !text-lg leading-normal text-gray-700 dark:text-white">
-				{company}
-			</p>
-			<p className="!mt-2 !text-lg leading-normal text-gray-700 dark:text-white">
-				{description}
-			</p>
+			<p className="!mt-2 !text-lg leading-normal text-white">{company}</p>
+			<p className="!mt-2 !text-lg leading-normal text-white">{description}</p>
 		</VerticalTimelineElement>
 	);
 };
