@@ -10,7 +10,7 @@ import useInView from "@/lib/useInView";
 const Skills = () => {
 	const isInView = useInView("skills", { threshold: 0.1 });
 	return (
-		<section id="skills" className="w-full pt-20">
+		<section id="skills" className="w-full pt-5 pb-20">
 			<motion.div
 				variants={slideIn("down", "tween", 0.2, 1)}
 				initial="hidden"

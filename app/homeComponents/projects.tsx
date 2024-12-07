@@ -6,10 +6,10 @@ type Props = {};
 const Projects = (props: Props) => {
 	return (
 		<section id="projects">
-			<div className="lg:w-10/12 2xl:max-w-6xl mx-auto sm:px-4 lg:px-0 py-20">
-				<div className="my-5 space-y-4">
+			<div className="lg:w-10/12 2xl:max-w-6xl mx-auto sm:px-4 lg:px-0  lg:py-20">
+				<div className="mx-5 space-y-4">
 					<p className="capitalize text-lg text-primary">my work</p>
-					<h1 className="text-5xl font-semibold hero-font uppercase">
+					<h1 className="text-3xl lg:text-5xl font-semibold hero-font uppercase">
 						Projects <span className="text-primary text-5xl">.</span>{" "}
 					</h1>
 					<div className="max-w-3xl">
@@ -22,7 +22,7 @@ const Projects = (props: Props) => {
 						</p>
 					</div>
 				</div>
-				<div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+				<div className="mx-5 grid grid-cols-1 lg:grid-cols-3 gap-5">
 					<div className="border border-orange-500 rounded p-6 grid gap-6">
 						<h3 className="text-2xl font-semibold">RealEstate</h3>
 						<p className="text-lg">

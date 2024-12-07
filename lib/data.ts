@@ -1,7 +1,7 @@
 import React from "react";
-import { GiReceiveMoney } from "react-icons/gi";
+import { RiGraduationCapLine } from "react-icons/ri";
 import { BiCodeAlt } from "react-icons/bi";
-import { AiFillYoutube } from "react-icons/ai";
+import { BsPersonWorkspace } from "react-icons/bs";
 // import KovacsTrading from "^/public/KovacsTrading.jpg";
 // import ClickGeneration from "^/public/ClickGeneration.jpg";
 // import LaPecoraNera from "^/public/LaPecoraNera.jpg";
@@ -54,8 +54,8 @@ export const experiencesData = [
 		title: "Graduatoin in CSE",
 		company: "Ranada Prasad Shaha University",
 		description:
-			"I have worked here as a frontend developer intern and learned many different technologies.I maintained api responses and try to reduce api latency.",
-		icon: React.createElement(BiCodeAlt),
+			"Earned a degree from X University, gaining strong foundations in programming, algorithms, and software development.",
+		icon: React.createElement(RiGraduationCapLine),
 		date: "Jan 2016 - Jan 2021",
 	},
 	{
@@ -63,7 +63,7 @@ export const experiencesData = [
 		company: "Chimbuk IT Ltd.",
 		description:
 			"I have worked here as a frontend developer intern and learned many different technologies.I maintained api responses and try to reduce api latency.",
-		icon: React.createElement(AiFillYoutube),
+		icon: React.createElement(BiCodeAlt),
 		date: "Jul 2021 - Sep 2021",
 	},
 	{
@@ -71,7 +71,7 @@ export const experiencesData = [
 		company: "Chimbuk IT Ltd.",
 		description:
 			"I worked as a full stack developer at Chimbuk IT Ltd. I have worked on HR and Payroll management, ERP software system for school and college, Learning management software.",
-		icon: React.createElement(GiReceiveMoney),
+		icon: React.createElement(BsPersonWorkspace),
 		date: "Oct 2021 - July 2024",
 	},
 ] as const;
