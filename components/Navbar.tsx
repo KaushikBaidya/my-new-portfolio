@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
 	return (
 		<div
 			ref={navContainerRef}
-			className="fixed inset-x-0 top-4 z-50 h-20 border-none transition-all duration-75 sm:inset-x-6"
+			className="fixed inset-x-0 top-4 z-[200] h-20 border-none transition-all duration-75 sm:inset-x-6"
 		>
 			<header className="absolute top-1/2 w-full -translate-y-1/2">
 				<nav className="flex size-full items-center justify-between p-4">
