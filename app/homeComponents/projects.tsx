@@ -16,7 +16,7 @@ const Projects = () => {
 					</h1>
 					<div className="max-w-3xl">
 						<p className="text-lg leading-relaxed py-4 text-gray-300">
-							Below are some of the projects I've worked on, showcasing my
+							Below are some of the projects I&apos;ve worked on, showcasing my
 							skills and creativity in web development. Each project is a unique
 							challenge, demonstrating my ability to use cutting-edge
 							technologies to build engaging and functional websites.
