@@ -6,6 +6,11 @@ import { BsPersonWorkspace } from "react-icons/bs";
 // import ClickGeneration from "^/public/ClickGeneration.jpg";
 // import LaPecoraNera from "^/public/LaPecoraNera.jpg";
 
+import Project1 from "@/assets/projects-image/Screenshot_1.png";
+import Project2 from "@/assets/projects-image/Screenshot_2.png";
+import Project3 from "@/assets/projects-image/Screenshot_3.png";
+import Project4 from "@/assets/projects-image/Screenshot_4.png";
+
 import HTML from "@/assets/html.png";
 import CSS from "@/assets/css.png";
 import JavaScript from "@/assets/javascript.png";
@@ -76,32 +81,40 @@ export const experiencesData = [
 	},
 ] as const;
 
-// export const projectsData = [
-// 	{
-// 		title: "Kovacs Trading",
-// 		description:
-// 			"The platform that provides everything you need to become a successful trader.",
-// 		tags: ["React", "Next.JS", "Tailwind CSS"],
-// 		imageUrl: KovacsTrading,
-// 		projectUrl: "https://kovacs-trading.robycodes.com/",
-// 	},
-// 	{
-// 		title: "Click Generation",
-// 		description:
-// 			"A StartUp with the goal of evolving small Italian companies using the power of Internet.",
-// 		tags: ["WordPress", "Elementor", "HTML", "CSS", "JavaScript"],
-// 		imageUrl: ClickGeneration,
-// 		projectUrl: "https://clickgeneration.it",
-// 	},
-// 	{
-// 		title: "La Pecora Nera",
-// 		description:
-// 			"An inviting restaurant where you can savor the finest, locally sourced foods with animals and vegetables grown from within a close radius.",
-// 		tags: ["WordPress", "Elementor", "HTML", "CSS", "JavaScript"],
-// 		imageUrl: LaPecoraNera,
-// 		projectUrl: "https://agriturismolapecoranera.com",
-// 	},
-// ] as const;
+export const projectsData = [
+	{
+		id: 1,
+		title: "Animated Website",
+		description:
+			"A visually stunning, award-winning website built with Vite, GSAP, and Tailwind. It showcases my ability to create engaging animations and smooth transitions.",
+		link: "https://ani-mated-web-site.netlify.app/",
+		image: Project1,
+	},
+	{
+		id: 2,
+		title: "Brilliant",
+		description:
+			"An online education platform, built with Next.js and Tailwind. This ongoing project allows users to access various learning resources.",
+		link: "https://brilliant-learning.vercel.app/",
+		image: Project2,
+	},
+	{
+		id: 3,
+		title: "RealEstate",
+		description:
+			"A real estate website built with React, Next.js, and Chakra UI, allowing users to search and view properties with ease.",
+		link: "https://realstate01.vercel.app/",
+		image: Project3,
+	},
+	{
+		id: 4,
+		title: "To Do",
+		description:
+			"A simple to-do app built with React, Tailwind, and Context API to manage tasks with a clean and intuitive UI.",
+		link: "https://todolist-theta-green.vercel.app/",
+		image: Project4,
+	},
+];
 
 export const skillsData = [
 	{ name: "HTML", imageUrl: HTML },
