@@ -59,7 +59,7 @@ export const experiencesData = [
 		title: "Graduatoin in CSE",
 		company: "Ranada Prasad Shaha University",
 		description:
-			"Earned a degree from X University, gaining strong foundations in programming, algorithms, and software development.",
+			"Earned a degree from Ranada Prasad Shaha University, gaining strong foundations in programming, algorithms, and software development.",
 		icon: React.createElement(RiGraduationCapLine),
 		date: "Jan 2016 - Jan 2021",
 	},
