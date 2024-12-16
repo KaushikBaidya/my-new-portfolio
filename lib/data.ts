@@ -56,20 +56,12 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: "Graduatoin in CSE",
-		company: "Ranada Prasad Shaha University",
-		description:
-			"Earned a degree from Ranada Prasad Shaha University, gaining strong foundations in programming, algorithms, and software development.",
-		icon: React.createElement(RiGraduationCapLine),
-		date: "Jan 2016 - Jan 2021",
-	},
-	{
 		title: "Frontend Developer (Intern)",
 		company: "Chimbuk IT Ltd.",
 		description:
 			"I have worked here as a frontend developer intern and learned many different technologies.I maintained api responses and try to reduce api latency.",
 		icon: React.createElement(BiCodeAlt),
-		date: "Jul 2021 - Sep 2021",
+		date: "Jul 2022 - Sep 2022",
 	},
 	{
 		title: "Frontend - Full Stack Developer",

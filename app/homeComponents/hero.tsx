@@ -12,7 +12,7 @@ const Hero = () => {
 			id="home"
 			className="lg:bg-[url('../assets/bakgrnd.png')] w-screen lg:h-dvh bg-center bg-no-repeat"
 		>
-			<div className="h-full w-full pt-28 md:pt-20 flex items-center justify-center">
+			<div className="h-screen lg:h-full w-full pt-28 md:pt-20 flex items-center justify-center">
 				<div className="lg:w-11/12 2xl:max-w-7xl mx-auto sm:px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 content-center px-4">
 					<div id="hero" className="flex items-center">
 						<motion.div
