@@ -1,27 +1,27 @@
 import React from "react";
-import { RiGraduationCapLine } from "react-icons/ri";
 import { BiCodeAlt } from "react-icons/bi";
 import { BsPersonWorkspace } from "react-icons/bs";
 // import KovacsTrading from "^/public/KovacsTrading.jpg";
 // import ClickGeneration from "^/public/ClickGeneration.jpg";
 // import LaPecoraNera from "^/public/LaPecoraNera.jpg";
 
+import Project0 from "@/assets/projects-image/galeria.png";
 import Project1 from "@/assets/projects-image/Screenshot_1.png";
 import Project2 from "@/assets/projects-image/Screenshot_2.png";
 import Project3 from "@/assets/projects-image/Screenshot_3.png";
 import Project4 from "@/assets/projects-image/Screenshot_4.png";
 
-import HTML from "@/assets/html.png";
 import CSS from "@/assets/css.png";
-import JavaScript from "@/assets/javascript.png";
-import ReactImage from "@/assets/react.png";
 import FireBase from "@/assets/firebase.png";
+import Framer from "@/assets/framer.webp";
 import GitHub from "@/assets/github.png";
-import Tailwind from "@/assets/tailwind.png";
+import HTML from "@/assets/html.png";
+import JavaScript from "@/assets/javascript.png";
 import Mongo from "@/assets/mongo.png";
 import Node from "@/assets/node.png";
+import ReactImage from "@/assets/react.png";
+import Tailwind from "@/assets/tailwind.png";
 import Typescript from "@/assets/typescript.png";
-import Framer from "@/assets/framer.webp";
 
 // export const navItems = [
 // 	"Home",
@@ -84,6 +84,14 @@ export const projectsData = [
 	},
 	{
 		id: 2,
+		title: "Galería",
+		description:
+			"A visually stunning, art auction website built with Vite, GSAP, Tailwind, NodeJs, and MongoDB.",
+		link: "https://e-commerce-mep1.vercel.app/",
+		image: Project0,
+	},
+	{
+		id: 3,
 		title: "Brilliant",
 		description:
 			"An online education platform, built with Next.js and Tailwind. This ongoing project allows users to access various learning resources.",
@@ -91,7 +99,7 @@ export const projectsData = [
 		image: Project2,
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "RealEstate",
 		description:
 			"A real estate website built with React, Next.js, and Chakra UI, allowing users to search and view properties with ease.",
@@ -99,7 +107,7 @@ export const projectsData = [
 		image: Project3,
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "To Do",
 		description:
 			"A simple to-do app built with React, Tailwind, and Context API to manage tasks with a clean and intuitive UI.",
