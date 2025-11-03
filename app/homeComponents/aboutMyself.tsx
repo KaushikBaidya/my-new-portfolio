@@ -47,7 +47,7 @@ const AboutMyself = () => {
 								and user-friendly solutions that solve real-world problems.
 								Let&apos;s work together to bring your ideas to life!
 							</p>
-							<div className="text-primary flex gap-2 my-3">
+							{/* <div className="text-primary flex gap-2 my-3">
 								<Tilt>
 									<Link
 										href="https://www.facebook.com/kaushik.123bd/"
@@ -82,7 +82,7 @@ const AboutMyself = () => {
 										</div>
 									</Link>
 								</Tilt>
-							</div>
+							</div> */}
 						</div>
 					</section>
 				</div>
